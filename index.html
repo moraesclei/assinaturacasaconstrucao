@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shirink-to-fit=no">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+
+    <title>Assinatura</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <form id="signatureForm">
+            <div class="row">
+                <!--Input nome-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Nome do candidato" oninput="updateSignature()">
+                    </div>
+                </div>
+                <!--Input cargo-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Cargo do funcionário</label>
+                        <input type="text" class="form-control" id="funcao" placeholder="Ex.: Gerente de TI" oninput="updateSignature()">
+                    </div>
+                </div>
+                <!--Input telefone-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Telefone</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Ex.: 2121-4555 Ramal: 4585" oninput="updateSignature()">
+                    </div>
+                </div>
+                <!--Input telefone2-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Telefone</label>
+                        <input type="text" class="form-control" id="phone2" placeholder="Ex.: 2121-4555 Ramal: 4585" oninput="updateSignature()">
+                    </div>
+                </div>
+                <!--Input e-mail-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">E-mail</label>
+                        <input type="text" class="form-control" id="email" placeholder="Ex.: email@email.com.br" oninput="updateSignature()">
+                    </div>
+                </div>
+                <!--Input Endereco-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Endereço</label>
+                        <input type="text" class="form-control" id="endereco" placeholder="Ex.: Av.Castilho Silva, 112" oninput="updateSignature()">
+                    </div>
+                </div>
+                <!--Input Complemento-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="exampleInputComplemento">Complemento</label>
+                        <input type="text" class="form-control" id="complemento" placeholder="Ex.: Sta.Etelvina, Manaus-Am-CEP:69059-165." oninput="updateSignature()">
+                    </div>
+                </div>
+            </div>
+
+            <!--Button-->
+            <button type="button" class="btn btn-primary" onclick="limparCampos()">Limpar Campos</button>
+        </form>
+
+    </div>
+    <div class="container mt-5">
+        <div class="position-relative">
+            <div class="nome text-write" id="assinaturaNome"></div>
+            <div class="funcao text-write" id="assinaturaFuncao"></div>
+            <div class="telefone text-write" id="assinaturaTelefone">Fone: (92)</div>
+            <div class="telefone2 text-write" id="assinaturaTelefone2">Fone: (92)</div>
+            <div class="email text-write" id="assinaturaEmail">E-mail:</div>
+            <div class="endereco text-write" id="assinaturaEndereco">Endereço:</div>
+            <div class="complemento text-write" id="assinaturaComplemento"></div>
+            <img id="signatureImage" src="assinatura2.jpeg">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
