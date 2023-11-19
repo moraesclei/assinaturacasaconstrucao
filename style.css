@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Ford Antenna Cond Bold';
+    src: url('fonts/Ford\ Antenna\ Cond\ Bold.ttf') format('truetype');
+    src: url('FordAntennaCond-Bold.eot');
+    src: url('FordAntennaCond-Bold.eot?#iefix') format('embedded-opentype'),
+        url('FordAntennaCond-Bold.woff2') format('woff2'),
+        url('FordAntennaCond-Bold.woff') format('woff'),
+        url('FordAntennaCond-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ford Antenna Cond light';
+    src: url('FordAntennaCond-Light.eot');
+    src: url('FordAntennaCond-Light.eot?#iefix') format('embedded-opentype'),
+        url('FordAntennaCond-Light.woff2') format('woff2'),
+        url('FordAntennaCond-Light.woff') format('woff'),
+        url('FordAntennaCond-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+#signatureContainer{
+    position: relative;
+}
+.nome{
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    left: 718px;
+    font-size: 1.5rem;
+    top: 13px;
+    font-weight: bold;
+    color: var(--white);
+}
+.funcao{
+    font-family: 'Ford Antenna Cond light';
+    position: absolute;
+    left: 718px;
+    top: 37px;
+    font-size: 20px;
+    color: var(--white);
+}
+
+.telefone{
+    font-family: 'Ford Antenna Cond light', 'sans-serif';
+    position: absolute;
+    left: 755px;
+    font-size: 12px;
+    top: 80px;
+    /* font-weight: bold; */
+    color: var(--white);
+}
+.telefone2{
+    font-family: 'Ford Antenna Cond light', 'sans-serif';
+    position: absolute;
+    left: 755px;
+    font-size: 12px;
+    top: 95px;
+    /* font-weight: bold; */
+    color: var(--white);
+}
+.email{
+    font-family: 'Ford Antenna Cond Bold', 'sans-serif';
+    position: absolute;
+    left: 758px;
+    font-size: 15px;
+    top: 113px;  
+    color: var(--white);  
+}
+
+.endereco{
+    font-family: 'Ford Antenna Cond light', 'sans-serif';
+    position: absolute;
+    left: 755px;
+    font-size: 12px;
+    top: 156px;
+    font-weight: normal;
+    color: var(--yellow)
+}
+
+.complemento{
+    font-family: 'Ford Antenna Cond Bold', 'sans-serif';
+    position: absolute;
+    left: 755px;
+    font-size: 12px;
+    top: 176px;
+    font-weight: normal;
+    color: var(--yellow);
+}
+
+.text-write {
+    /* color: #fff!important; */
+    position: absolute;
+
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.funcao::after{
+    content: ""; /*Cria um elemento pseudo-elemento*/
+    display:block; /*Faz com que o elemento seja exibido como bloco*/
+    width: 100%; /*A largura doi traço é igual à largura do texto*/
+    border-bottom: 2px solid var(--yellow); /*Adiciona o traço amarelo*/
+    position: absolute; /*Permite posicionar o traço em relação ao elemento pai */
+    bottom: 0; /*Posiciona o traço na parte inferior do elemento pai*/
+}
+div {
+    display: block;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#signatureImage{
+    max-width: 100%;
+    margin-bottom: 2px;
+    /* position: absolute;
+    left: 2px; */
+    /* vertical-align: middle;
+    border-style: none;
+    overflow-clip-margin: content-box;
+    overflow: clip; */
+}
+
+
+
